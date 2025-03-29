@@ -3,4 +3,7 @@
         "test.py": "1",
         "test2.py": "1"
     }
+    "client": {
+        "version":"1"
+    }
 }
