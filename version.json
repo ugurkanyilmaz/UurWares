@@ -1,7 +1,8 @@
 {
     "features": {
         "test.py": "1",
-        "test2.py": "1"
+        "test2.py": "1",
+        "test3.py": "1"
     },
     "client": {
         "version": "1"
