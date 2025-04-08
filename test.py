@@ -1,6 +1,9 @@
 import sys
 from PyQt6.QtWidgets import QApplication, QWidget, QPushButton, QMessageBox
 
+# Define the secret key
+SECRET_KEY = "V3fq#bT.{G'eHD+=~YCgQ7"
+
 class MyApp(QWidget):
     def __init__(self):
         super().__init__()
@@ -19,7 +22,13 @@ class MyApp(QWidget):
         QApplication.instance().quit()
 
 if __name__ == '__main__':
-    app = QApplication(sys.argv)
+    app = QApplication(sys.argv)  # Initialize QApplication first
+
+    # Check if the correct secret key is provided
+    if len(sys.argv) < 2 or sys.argv[1] != SECRET_KEY:
+        QMessageBox.critical(None, 'Error', 'Unauthorized access. Exiting...')
+        sys.exit(1)
+
     ex = MyApp()
     ex.show()
     sys.exit(app.exec())
