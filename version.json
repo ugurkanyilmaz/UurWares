@@ -1,11 +1,5 @@
 {
-    "features": {
-        "test.py": "1",
-        "test2.py": "1",
-        "test3.py": "1",
-        "mnd_rug_photo_sorter.exe": "1"
-    },
     "client": {
         "version": "1"
-    }
+    },
 }
